@@ -25,13 +25,17 @@
     <item>
       <title>Presentations</title>
       <link>http://mcascallares.github.io/presentation/</link>
-      <pubDate>Mon, 02 Feb 2015 00:00:00 UT</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UT</pubDate>
       
       <guid>http://mcascallares.github.io/presentation/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://mcascallares.github.io/resources/MongoDB-TV/index.html&#34;&gt;MongoDB-TV&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://slides.com/mcascallares/mongodb-sa-road-trip-ba&#34;&gt;What&amp;rsquo;s new in MongoDB 2.6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://hand-luggage.appspot.com/&#34;&gt;Hand Luggage (AKA an overview of my trips)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://slides.com/mcascallares/mongodb-sa-road-trip-ba&#34;&gt;What&amp;rsquo;s new in MongoDB 2.6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/MatiasCascallares/the-what-and-why-of-nosql&#34;&gt;The What and Why of NoSql&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/MatiasCascallares/the-fine-art-of-schema-design-in-mongodb-dos-and-donts&#34;&gt;The Fine Art of Schema Design in MongoDB: Dos and Don&amp;rsquo;ts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/MatiasCascallares/schema-design-real-world-use-case&#34;&gt;Schema Design - Real world use case&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.slideshare.net/MatiasCascallares/02-mms-monitoring-backup-and-management-at-a-single-click&#34;&gt;MMS - Monitoring, backup and management at a single click&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mcascallares.github.io/resources/MongoDB-TV/index.html&#34;&gt;MongoDB-TV&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

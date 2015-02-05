@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on </title>
+    <link>http://mcascallares.github.io/post/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    
+    
+    <lastBuildDate>Mon, 02 Feb 2015 00:00:00 UT</lastBuildDate>
+    <atom:link href="http://mcascallares.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Latest posts</title>
+      <link>http://mcascallares.github.io/post/</link>
+      <pubDate>Mon, 02 Feb 2015 00:00:00 UT</pubDate>
+      
+      <guid>http://mcascallares.github.io/post/</guid>
+      <description>&lt;p&gt;Index of posts&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

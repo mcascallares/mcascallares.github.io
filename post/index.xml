@@ -18,7 +18,7 @@
       <pubDate>Thu, 05 Feb 2015 17:23:07 SGT</pubDate>
       
       <guid>http://mcascallares.github.io/post/nosql-night-in-malaysia/</guid>
-      <description>&lt;p&gt;Last Thursday I went to Kuala Lumpur invited by &lt;a href=&#34;https://twitter.com/m_smalley&#34;&gt;Mark Smalley&lt;/a&gt; to present at &lt;a href=&#34;http://nosqlasia.org/blog/nosql-asia-starts-2015-with-a-full-house-in-kl-on-january-29th&#34;&gt;NoSQL Night&lt;/a&gt; event. It was a clear success with almost 100 attendees at the trendy &lt;a href=&#34;http://www.mindvalley.com&#34;&gt;Mindvalley&lt;/a&gt; offices with good pizzas and awesome tech people.&lt;/p&gt;
+      <description>&lt;p&gt;Last Thursday I went to Kuala Lumpur invited by &lt;a href=&#34;https://twitter.com/m_smalley&#34;&gt;Mark Smalley&lt;/a&gt; to present at &lt;a href=&#34;http://nosqlasia.org/blog/nosql-asia-starts-2015-with-a-full-house-in-kl-on-january-29th&#34;&gt;NoSQL Night&lt;/a&gt; event. It was a clear success with more than 150 attendees at the trendy &lt;a href=&#34;http://www.mindvalley.com&#34;&gt;Mindvalley&lt;/a&gt; offices with good pizzas and awesome tech people.&lt;/p&gt;
 
 &lt;p&gt;There was a common message across the four different sessions: &lt;em&gt;there is no database perfect for all the possible scenarios&lt;/em&gt;. If you expect to have a single technology to solve all your problems then you are probably starting with the wrong foot. You need to analyze your use case and discover when does make sense to use a key-value store, a document or a relational database. It was a glad surprise to see that this concept was already understood in the audience, which demonstrates how mature is the community in Kuala Lumpur.&lt;/p&gt;
 

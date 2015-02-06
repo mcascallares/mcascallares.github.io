@@ -320,6 +320,7 @@ a.post-category:hover {
 /* Social Sharing */
 .social-sharing {
 	clear: left;
+    text-align: right;
 	padding-left: 2px;
 	margin-top: 0.75rem;
 	margin-bottom: 0.75rem;

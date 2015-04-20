@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on home ..nothing like</title>
-    <link>http://localhost:1313/categories/docker/</link>
+    <link>http://mcascallares.github.io/categories/docker/</link>
     <description>Recent content in Docker on home ..nothing like</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Apr 2015 14:12:26 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://mcascallares.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Using MongoDB with Docker and Automation</title>
-      <link>http://localhost:1313/post/using-mongodb-with-docker-and-automation/</link>
+      <link>http://mcascallares.github.io/post/using-mongodb-with-docker-and-automation/</link>
       <pubDate>Mon, 20 Apr 2015 14:12:26 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/using-mongodb-with-docker-and-automation/</guid>
+      <guid>http://mcascallares.github.io/post/using-mongodb-with-docker-and-automation/</guid>
       <description>&lt;p&gt;Lately I have been playing a lot with Docker. I love the whole idea of containers, how you can easily deploy processes in an &lt;em&gt;isolated&lt;/em&gt; environment with low resource overhead. In addition, I think another big win introduced by Docker is the &lt;a href=&#34;http://docs.docker.com/userguide/dockerimages/&#34;&gt;image concept&lt;/a&gt;: a hermetically sealed portable file that contains all that you need to run your process or application: binaries, dependencies and configuration. Just beautiful!&lt;/p&gt;
 
 &lt;p&gt;Working at MongoDB means I need to run several mongod processes every day: to test a specific feature, to demo something, configuration example, etc. It also means that sometimes I need to deploy multiple nodes with different configurations to simulate a real scenario. I started to use Docker for this and it has been working like a breeze. In a couple of seconds I can start multiple mongod processes with different configurations, different Linux distributions and play around with them. Before starting with Docker I used &lt;a href=&#34;https://www.vagrantup.com&#34;&gt;Vagrant&lt;/a&gt; instances with VirtualBox, but it required more resources and it was slower.&lt;/p&gt;

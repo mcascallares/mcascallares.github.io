@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on home ..nothing like</title>
-    <link>http://mcascallares.github.io/categories/docker/</link>
+    <link>http://mcascallares.github.io/categories/docker/index.xml</link>
     <description>Recent content in Docker on home ..nothing like</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2015 14:12:26 +0800</lastBuildDate>
     <atom:link href="http://mcascallares.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     
     <item>

@@ -2,12 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>home ..nothing like</title>
-    <link>http://mcascallares.github.io/</link>
+    <link>http://mcascallares.github.io/index.xml</link>
     <description>Recent content on home ..nothing like</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2015 14:12:26 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Mar 2017 17:49:51 +0800</lastBuildDate>
     <atom:link href="http://mcascallares.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Adopting a Real Time Stack</title>
+      <link>http://mcascallares.github.io/post/adopting-a-real-time-stack/</link>
+      <pubDate>Sun, 19 Mar 2017 17:49:51 +0800</pubDate>
+      
+      <guid>http://mcascallares.github.io/post/adopting-a-real-time-stack/</guid>
+      <description>&lt;p&gt;In December 2016 we had an Elastic booth at Strata Hadoop Singapore. It was a 2-days event with great discussions with users and customers. Check the video for more impressions around this event.&lt;/p&gt;
+
+&lt;iframe width=&#34;640&#34; height=&#34;360&#34; src=&#34;https://www.youtube.com/embed/SrKsOWgpaMs&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Using MongoDB with Docker and Automation</title>
@@ -97,7 +109,7 @@ With the above configuration I can use the following containers:&lt;/p&gt;
     </item>
     
     <item>
-      <title>NoSQL night in Malaysia</title>
+      <title>NoSQL Night in Malaysia</title>
       <link>http://mcascallares.github.io/post/nosql-night-in-malaysia/</link>
       <pubDate>Thu, 05 Feb 2015 17:23:07 +0800</pubDate>
       

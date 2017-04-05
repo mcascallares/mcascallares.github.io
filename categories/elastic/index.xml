@@ -9,6 +9,24 @@
     <atom:link href="http://mcascallares.github.io/categories/elastic/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Elastic Meetup in Barcelona</title>
+      <link>http://mcascallares.github.io/post/elastic-meetup-in-barcelona/</link>
+      <pubDate>Wed, 05 Apr 2017 11:43:47 +0200</pubDate>
+      
+      <guid>http://mcascallares.github.io/post/elastic-meetup-in-barcelona/</guid>
+      <description>&lt;p&gt;This week I am in Barcelona with some meetings, trainings and other fun activities with the Elastic crew. Yes, eating amazing ham is one of them :)&lt;/p&gt;
+
+&lt;p&gt;Since I wanted to get 110% of my stay here, we also arranged a meetup at &lt;a href=&#34;https://www.wallapop.com&#34;&gt;Wallapop&lt;/a&gt; offices to meet the local community and talk about what&amp;rsquo;s going in the Elastic ecosystem and present all the amazing goodness we announced in our last Elastic{ON}.&lt;/p&gt;
+
+&lt;p&gt;We had around 30 attendees and very interesting discussions. Find below the presentation:&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/6uUyJ1tplxS7s0&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/MatiasCascallares/elasticon-2017-recap&#34; title=&#34;Elastic{ON} 2017 Recap&#34; target=&#34;_blank&#34;&gt;Elastic{ON} 2017 Recap&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/MatiasCascallares&#34;&gt;Matias Cascallares&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking forward to the next meetup with the Spanish community!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How Elastic Helps Shopback Offer the Best Deals</title>
       <link>http://mcascallares.github.io/post/how-elastic-helps-shopback-offer-the-best-deals/</link>
       <pubDate>Mon, 13 Mar 2017 18:19:02 +0800</pubDate>

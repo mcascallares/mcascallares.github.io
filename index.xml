@@ -71,5 +71,14 @@ Working at MongoDB means I need to run several mongod processes every day: to te
 There was a common message across the four different sessions: there is no database perfect for all the possible scenarios. If you expect to have a single technology to solve all your problems then you are probably starting with the wrong foot.</description>
     </item>
     
+    <item>
+      <title>Presentations</title>
+      <link>http://mcascallares.github.io/presentation/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://mcascallares.github.io/presentation/index/</guid>
+      <description> Hand Luggage (AKA an overview of my trips) What&amp;rsquo;s new in MongoDB 2.6 The What and Why of NoSql The Fine Art of Schema Design in MongoDB: Dos and Don&amp;rsquo;ts Schema Design - Real world use case MMS - Monitoring, backup and management at a single click MongoDB-TV Elasticsearch 5.0 Elastic{ON} 2017 Recap  </description>
+    </item>
+    
   </channel>
 </rss>

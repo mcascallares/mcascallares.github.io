@@ -87,6 +87,11 @@
   
   <url>
     <loc>http://mcascallares.github.io/presentation/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/presentation/index/</loc>
   </url>
   
   <url>

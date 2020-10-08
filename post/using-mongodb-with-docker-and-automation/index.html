@@ -14,7 +14,7 @@
 <meta name="description" content="Lately I have been playing a lot with Docker. I like the whole idea of containers, how you can easily deploy processes in an isolated environment with low resource overhead. In addition, I think another big win introduced by Docker is the image concept: a hermetically sealed portable file that contains all that you need to run your process or application: binaries, dependencies and configuration. Just beautiful!">
 <meta name="keywords" content="software,mongodb,docker,databases,">
 <meta name="author" content="Matias Cascallares">
-<meta name="generator" content="Hugo 0.20.2" />
+<meta name="generator" content="Hugo 0.76.2" />
 
   <meta property="og:title" content="Using MongoDB with Docker and Automation" />
 <meta property="og:description" content="Lately I have been playing a lot with Docker. I like the whole idea of containers, how you can easily deploy processes in an isolated environment with low resource overhead. In addition, I think another big win introduced by Docker is the image concept: a hermetically sealed portable file that contains all that you need to run your process or application: binaries, dependencies and configuration. Just beautiful!" />
@@ -138,6 +138,11 @@
 
 		
 			
+		    <div id="toc" class="pure-u-1 pure-u-md-1-4">
+				<small class="toc-label">Contents</small>
+		   	 	<nav id="TableOfContents"></nav>
+		    </div>
+		    
 	    
   		<section class="post">
             <h1 class="post-title">
@@ -186,82 +191,70 @@
 			
 
             <p>Lately I have been playing a lot with Docker. I love the whole idea of containers, how you can easily deploy processes in an <em>isolated</em> environment with low resource overhead. In addition, I think another big win introduced by Docker is the <a href="http://docs.docker.com/userguide/dockerimages/">image concept</a>: a hermetically sealed portable file that contains all that you need to run your process or application: binaries, dependencies and configuration. Just beautiful!</p>
-
 <p>Working at MongoDB means I need to run several mongod processes every day: to test a specific feature, to demo something, configuration example, etc. It also means that sometimes I need to deploy multiple nodes with different configurations to simulate a real scenario. I started to use Docker for this and it has been working like a breeze. In a couple of seconds I can start multiple mongod processes with different configurations, different Linux distributions and play around with them. Before starting with Docker I used <a href="https://www.vagrantup.com">Vagrant</a> instances with VirtualBox, but it required more resources and it was slower.</p>
-
 <p>The triangulation of my MongoDB sandbox environment is completed with <a href="https://mms.mongodb.com/">MMS Automation</a>. For those who don&rsquo;t know MMS, it is a cloud service to manage, monitor and backup your MongoDB instances that can be running anywhere: cloud, on-premise servers or your own laptop in a kind of <em>bring your own infrastructure</em> principle. One interesting aspect of MMS is that you do not need to worry about installing and managing your MongoDB instances, you just need to specify which machines do you want to deploy to and the desired MongoDB configuration (e.g. I want a 3-nodes replica set).</p>
-
 <p>When I updated my sandbox environment to Docker I built an <a href="https://registry.hub.docker.com/u/mcascallares/mongodb-automation/">image ready to work with MMS Automation</a> that includes the MMS Automation agent pre-installed. That means that if I want to start a new mongod process I just start one container with this image specifying my MMS GroupId + ApiKey and the container is ready to be provisioned using the MMS web interface.</p>
-
 <p>If I need to deploy a distributed environment like a MongoDB replica set or sharded cluster I need to take care of the networking among my replica nodes: provide connectivity and host resolution among all of them. You can find <a href="http://progrium.com/blog/2014/08/20/consul-service-discovery-with-docker/">really good posts</a> out there explaining how to achieve service discovery with Docker so I am not going into details on this. What I used for my sandbox is a container running Skydns plus another container running <a href="https://github.com/crosbymichael/skydock">Skydock</a>. This container is listening for other container events, like start and stop, and based on those it will add/remove DNS entries allowing up-to-date hostname resolution across all my containers.</p>
-
 <p>Putting all together to deploy a 3-nodes replica set using <a href="http://www.fig.sh">Docker Compose</a>:</p>
-
-<pre><code class="language-bash"># running a DNS container with Skydns
-docker run -d \
-    -p 172.17.42.1:53:53/udp \
-    --name skydns crosbymichael/skydns \
-    -nameserver 8.8.8.8:53 \
-    -domain docker
-
-
-# running Skydock container to hook docker events with DNS updates
-docker run -d \
-    -v /var/run/docker.sock:/docker.sock \
-    --name skydock crosbymichael/skydock \
-    -ttl 30 \
-    -environment dev \
-    -s /docker.sock \
-    -domain docker \
-    -name skydns
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># running a DNS container with Skydns</span>
+docker run -d <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -p 172.17.42.1:53:53/udp <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --name skydns crosbymichael/skydns <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -nameserver 8.8.8.8:53 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -domain docker
 
 
-# running 3 mongod processes in 3 different containers, one agent per container.
-docker run -d \
-    --name mongod1 \
-    -h mongod1.mongodb-automation.dev.docker \
-    --dns 172.17.42.1 \
-    -p 27017:27000 \
-    mcascallares/mongodb-automation:latest \
-    --mmsBaseUrl=https://mms.mongodb.com \
-    --mmsGroupId=&lt;your_mms_group_id&gt; \
-    --mmsApiKey=&lt;your_mms_api_key&gt;
+<span style="color:#75715e"># running Skydock container to hook docker events with DNS updates</span>
+docker run -d <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -v /var/run/docker.sock:/docker.sock <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --name skydock crosbymichael/skydock <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -ttl <span style="color:#ae81ff">30</span> <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -environment dev <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -s /docker.sock <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -domain docker <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -name skydns
 
 
-docker run -d \
-    --name mongod2 \
-    -h mongod2.mongodb-automation.dev.docker \
-    --dns 172.17.42.1 \
-    -p 27018:27000 \
-    mcascallares/mongodb-automation:latest \
-    --mmsBaseUrl=https://mms.mongodb.com \
-    --mmsGroupId=&lt;your_group_id&gt; \
-    --mmsApiKey=&lt;your_mms_api_key&gt;
+<span style="color:#75715e"># running 3 mongod processes in 3 different containers, one agent per container.</span>
+docker run -d <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --name mongod1 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -h mongod1.mongodb-automation.dev.docker <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --dns 172.17.42.1 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -p 27017:27000 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    mcascallares/mongodb-automation:latest <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsBaseUrl<span style="color:#f92672">=</span>https://mms.mongodb.com <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsGroupId<span style="color:#f92672">=</span>&lt;your_mms_group_id&gt; <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsApiKey<span style="color:#f92672">=</span>&lt;your_mms_api_key&gt;
 
 
-docker run -d \
-    --name mongod3 \
-    -h mongod3.mongodb-automation.dev.docker \
-    --dns 172.17.42.1 \
-    -p 27019:27000 \
-    mcascallares/mongodb-automation:latest \
-    --mmsBaseUrl=https://mms.mongodb.com \
-    --mmsGroupId=&lt;your_group_id&gt; \
-    --mmsApiKey=&lt;your_mms_api_key&gt;
+docker run -d <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --name mongod2 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -h mongod2.mongodb-automation.dev.docker <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --dns 172.17.42.1 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -p 27018:27000 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    mcascallares/mongodb-automation:latest <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsBaseUrl<span style="color:#f92672">=</span>https://mms.mongodb.com <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsGroupId<span style="color:#f92672">=</span>&lt;your_group_id&gt; <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsApiKey<span style="color:#f92672">=</span>&lt;your_mms_api_key&gt;
 
-</code></pre>
 
-<p><br>
-With the above configuration I can use the following containers:</p>
+docker run -d <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --name mongod3 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -h mongod3.mongodb-automation.dev.docker <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --dns 172.17.42.1 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    -p 27019:27000 <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    mcascallares/mongodb-automation:latest <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsBaseUrl<span style="color:#f92672">=</span>https://mms.mongodb.com <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsGroupId<span style="color:#f92672">=</span>&lt;your_group_id&gt; <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    --mmsApiKey<span style="color:#f92672">=</span>&lt;your_mms_api_key&gt;
 
+</code></pre></div><!-- raw HTML omitted -->
 <ul>
 <li>mongod1.mongodb-automation.dev.docker</li>
 <li>mongod2.mongodb-automation.dev.docker</li>
 <li>mongod3.mongodb-automation.dev.docker</li>
 </ul>
-
 <p>to deploy my MongoDB replica set using MMS user interface. Check <a href="https://docs.mms.mongodb.com">MMS Documentation</a>.</p>
-
 <p>Find more details and other setup examples at <a href="https://registry.hub.docker.com/u/mcascallares/mongodb-automation/">Docker Hub</a>.</p>
 
 	
@@ -281,14 +274,14 @@ With the above configuration I can use the following containers:</p>
 					
 					<div class="paging-newer">
 						<span class="dark-red">Newer</span><span class="decorative-marker">//</span>
-						<a class="paging-link" href="http://mcascallares.github.io/post/adopting-a-real-time-stack/">Adopting a Real Time Stack</a>
+						<a class="paging-link" href="http://mcascallares.github.io/post/nosql-night-in-malaysia/">NoSQL Night in Malaysia</a>
 		            </div>
 		            
 
 					
 					<div class="paging-older">
 						<span class="dark-red">Older</span><span class="decorative-marker">//</span>
-			            <a class="paging-link" href="http://mcascallares.github.io/post/nosql-night-in-malaysia/">NoSQL Night in Malaysia</a>
+			            <a class="paging-link" href="http://mcascallares.github.io/post/adopting-a-real-time-stack/">Adopting a Real Time Stack</a>
 		            </div>
 		            
 	            </div>
@@ -306,7 +299,7 @@ With the above configuration I can use the following containers:</p>
         </ul>
     </div>
 
-    <p>&copy; 2017. All rights reserved. </p>
+    <p>&copy; 2020. All rights reserved. </p>
 
     <p>Powered by <a href="http://gohugo.io">Hugo</a> with <a href="https://github.com/tmaiaroto/hugo-redlounge">redlounge theme</a></p>
 </div>

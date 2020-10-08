@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on home ..nothing like</title>
@@ -6,26 +6,49 @@
     <description>Recent content in Categories on home ..nothing like</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Mar 2017 18:19:02 +0800</lastBuildDate>
-    
-	<atom:link href="http://mcascallares.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 17 Apr 2017 22:42:26 +0800</lastBuildDate><atom:link href="http://mcascallares.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Analytics</title>
-      <link>http://mcascallares.github.io/categories/analytics/</link>
-      <pubDate>Mon, 13 Mar 2017 18:19:02 +0800</pubDate>
+      <title>elastic</title>
+      <link>http://mcascallares.github.io/categories/elastic/</link>
+      <pubDate>Mon, 17 Apr 2017 22:42:26 +0800</pubDate>
       
-      <guid>http://mcascallares.github.io/categories/analytics/</guid>
+      <guid>http://mcascallares.github.io/categories/elastic/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Databases</title>
-      <link>http://mcascallares.github.io/categories/databases/</link>
-      <pubDate>Thu, 05 Feb 2015 17:23:07 +0800</pubDate>
+      <title>elasticsearch</title>
+      <link>http://mcascallares.github.io/categories/elasticsearch/</link>
+      <pubDate>Mon, 17 Apr 2017 22:42:26 +0800</pubDate>
       
-      <guid>http://mcascallares.github.io/categories/databases/</guid>
+      <guid>http://mcascallares.github.io/categories/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xpack</title>
+      <link>http://mcascallares.github.io/categories/xpack/</link>
+      <pubDate>Mon, 17 Apr 2017 22:42:26 +0800</pubDate>
+      
+      <guid>http://mcascallares.github.io/categories/xpack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meetup</title>
+      <link>http://mcascallares.github.io/categories/meetup/</link>
+      <pubDate>Wed, 05 Apr 2017 11:43:47 +0200</pubDate>
+      
+      <guid>http://mcascallares.github.io/categories/meetup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>analytics</title>
+      <link>http://mcascallares.github.io/categories/analytics/</link>
+      <pubDate>Mon, 13 Mar 2017 18:19:02 +0800</pubDate>
+      
+      <guid>http://mcascallares.github.io/categories/analytics/</guid>
       <description></description>
     </item>
     
@@ -39,34 +62,7 @@
     </item>
     
     <item>
-      <title>Elastic</title>
-      <link>http://mcascallares.github.io/categories/elastic/</link>
-      <pubDate>Mon, 17 Apr 2017 22:42:26 +0800</pubDate>
-      
-      <guid>http://mcascallares.github.io/categories/elastic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Elasticsearch</title>
-      <link>http://mcascallares.github.io/categories/elasticsearch/</link>
-      <pubDate>Mon, 17 Apr 2017 22:42:26 +0800</pubDate>
-      
-      <guid>http://mcascallares.github.io/categories/elasticsearch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Meetup</title>
-      <link>http://mcascallares.github.io/categories/meetup/</link>
-      <pubDate>Wed, 05 Apr 2017 11:43:47 +0200</pubDate>
-      
-      <guid>http://mcascallares.github.io/categories/meetup/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mongodb</title>
+      <title>MongoDB</title>
       <link>http://mcascallares.github.io/categories/mongodb/</link>
       <pubDate>Mon, 20 Apr 2015 14:12:26 +0800</pubDate>
       
@@ -75,11 +71,11 @@
     </item>
     
     <item>
-      <title>Xpack</title>
-      <link>http://mcascallares.github.io/categories/xpack/</link>
-      <pubDate>Mon, 17 Apr 2017 22:42:26 +0800</pubDate>
+      <title>databases</title>
+      <link>http://mcascallares.github.io/categories/databases/</link>
+      <pubDate>Thu, 05 Feb 2015 17:23:07 +0800</pubDate>
       
-      <guid>http://mcascallares.github.io/categories/xpack/</guid>
+      <guid>http://mcascallares.github.io/categories/databases/</guid>
       <description></description>
     </item>
     

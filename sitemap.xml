@@ -1,5 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://mcascallares.github.io/categories/</loc>
+    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/categories/elastic/</loc>
+    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/categories/elasticsearch/</loc>
+    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/</loc>
+    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
+  </url>
   
   <url>
     <loc>http://mcascallares.github.io/post/machine-learning-preview-in-spanish/</loc>
@@ -7,8 +28,28 @@
   </url>
   
   <url>
+    <loc>http://mcascallares.github.io/post/</loc>
+    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/categories/xpack/</loc>
+    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://mcascallares.github.io/post/elastic-meetup-in-barcelona/</loc>
     <lastmod>2017-04-05T11:43:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/categories/meetup/</loc>
+    <lastmod>2017-04-05T11:43:47+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/categories/analytics/</loc>
+    <lastmod>2017-03-13T18:19:02+08:00</lastmod>
   </url>
   
   <url>
@@ -22,8 +63,23 @@
   </url>
   
   <url>
+    <loc>http://mcascallares.github.io/categories/docker/</loc>
+    <lastmod>2015-04-20T14:12:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/categories/mongodb/</loc>
+    <lastmod>2015-04-20T14:12:26+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://mcascallares.github.io/post/using-mongodb-with-docker-and-automation/</loc>
     <lastmod>2015-04-20T14:12:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://mcascallares.github.io/categories/databases/</loc>
+    <lastmod>2015-02-05T17:23:07+08:00</lastmod>
   </url>
   
   <url>
@@ -32,83 +88,11 @@
   </url>
   
   <url>
-    <loc>http://mcascallares.github.io/categories/analytics/</loc>
-    <lastmod>2017-03-13T18:19:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/categories/</loc>
-    <lastmod>2017-03-13T18:19:02+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/categories/databases/</loc>
-    <lastmod>2015-02-05T17:23:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/categories/docker/</loc>
-    <lastmod>2015-04-20T14:12:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/categories/elastic/</loc>
-    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/categories/elasticsearch/</loc>
-    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/categories/meetup/</loc>
-    <lastmod>2017-04-05T11:43:47+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/categories/mongodb/</loc>
-    <lastmod>2015-04-20T14:12:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/post/</loc>
-    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://mcascallares.github.io/presentation/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/presentation/index/</loc>
   </url>
   
   <url>
     <loc>http://mcascallares.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/categories/xpack/</loc>
-    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://mcascallares.github.io/</loc>
-    <lastmod>2017-04-17T22:42:26+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

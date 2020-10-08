@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Meetup on home ..nothing like</title>
+    <title>meetup on home ..nothing like</title>
     <link>http://mcascallares.github.io/categories/meetup/</link>
-    <description>Recent content in Meetup on home ..nothing like</description>
+    <description>Recent content in meetup on home ..nothing like</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Apr 2017 11:43:47 +0200</lastBuildDate>
-    
-	<atom:link href="http://mcascallares.github.io/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 05 Apr 2017 11:43:47 +0200</lastBuildDate><atom:link href="http://mcascallares.github.io/categories/meetup/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elastic Meetup in Barcelona</title>
       <link>http://mcascallares.github.io/post/elastic-meetup-in-barcelona/</link>

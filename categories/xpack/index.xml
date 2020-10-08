@@ -1,24 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Xpack on home ..nothing like</title>
+    <title>xpack on home ..nothing like</title>
     <link>http://mcascallares.github.io/categories/xpack/</link>
-    <description>Recent content in Xpack on home ..nothing like</description>
+    <description>Recent content in xpack on home ..nothing like</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Apr 2017 22:42:26 +0800</lastBuildDate>
-    
-	<atom:link href="http://mcascallares.github.io/categories/xpack/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 17 Apr 2017 22:42:26 +0800</lastBuildDate><atom:link href="http://mcascallares.github.io/categories/xpack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine Learning Preview</title>
       <link>http://mcascallares.github.io/post/machine-learning-preview-in-spanish/</link>
       <pubDate>Mon, 17 Apr 2017 22:42:26 +0800</pubDate>
       
       <guid>http://mcascallares.github.io/post/machine-learning-preview-in-spanish/</guid>
-      <description>La versión 5.4 de Elastic incluye un nuevo módulo para detección de anomalias. En este video pueden ver un preview de las funcionalidades de dicho módulo y sus capacidades.
- </description>
+      <description>La versión 5.4 de Elastic incluye un nuevo módulo para detección de anomalias. En este video pueden ver un preview de las funcionalidades de dicho módulo y sus capacidades.</description>
     </item>
     
   </channel>
